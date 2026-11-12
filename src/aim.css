@@ -1,0 +1,13 @@
+.world::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background: radial-gradient(ellipse at center, transparent 37%, rgb(14 22 25 / 28%) 100%);
+  opacity: 0;
+  transition: opacity 160ms ease;
+}
+
+.world.aiming::after {
+  opacity: 1;
+}
